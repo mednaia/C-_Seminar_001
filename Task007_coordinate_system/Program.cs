@@ -1,6 +1,6 @@
-﻿Console.WriteLine("Введите коорлинаты точки по оси X и нажмите клавишу Enter: ");
+﻿Console.WriteLine("Введите координаты точки по оси X и нажмите клавишу Enter: ");
 int x = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите коорлинаты точки по оси Y и нажмите клавишу Enter: ");
+Console.WriteLine("Введите координаты точки по оси Y и нажмите клавишу Enter: ");
 int y = int.Parse(Console.ReadLine());
 if(x>0 && y>0)
 {
@@ -16,13 +16,13 @@ else
     {
         if(x<0 && y<0)
         {
-            Console.WriteLine($"Точка с координатами {x},{y} находится во III четверти координатной плоскости.");
+            Console.WriteLine($"Точка с координатами {x},{y} находится в III четверти координатной плоскости.");
         }
         else
         {
             if(x>0 && y<0)
             {
-                Console.WriteLine($"Точка с координатами {x},{y} находится во IV четверти координатной плоскости.");
+                Console.WriteLine($"Точка с координатами {x},{y} находится в IV четверти координатной плоскости.");
             }
             else
             {
