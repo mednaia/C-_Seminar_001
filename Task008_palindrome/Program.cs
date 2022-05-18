@@ -2,11 +2,7 @@
 int a = int.Parse(Console.ReadLine());
 if(a > 9999 && a < 100000)
 {
-    int digit1 = a / 10000;
-    int digit2 = (a / 1000)%10;
-    int digit4 = (a / 10)%10;
-    int digit5 = a % 10;
-    if(digit1 == digit5 && digit2 == digit4)
+    if(a / 10000 == a % 10 && (a / 1000)%10 == (a / 10)%10)
     {
         Console.WriteLine($"Число {a} - палиндром");
     }
