@@ -1,18 +1,15 @@
 ﻿Console.WriteLine("Введите пятизначное число и нажмите клавишу Enter: ");
-int a = int.Parse(Console.ReadLine());
-if(a > 9999 && a < 100000)
+int[] Num = new int[5];
+for (int i = 0; i < 5; i++)
 {
-    if(a / 10000 == a % 10 && (a / 1000)%10 == (a / 10)%10)
-    {
-        Console.WriteLine($"Число {a} - палиндром");
-    }
-    else
-    {
-        Console.WriteLine($"Число {a} не является палиндромом");
-    }
+    Console.Write($"Введите элемент массива под индексом {i}\t");
+    Num[i] = int.Parse(Console.ReadLine());
 }
-
+if(Num[0] == Num[4] && Num[1] == Num[3])
+{
+    Console.WriteLine("Введенное число - палиндром");
+}
 else
 {
-    Console.WriteLine("Это не пятизначное число!");
+    Console.WriteLine("Введенное число не является палиндромом");
 }
